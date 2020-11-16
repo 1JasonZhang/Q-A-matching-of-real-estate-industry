@@ -13,12 +13,14 @@ run_cv.py是五折交叉验证的模型
 
 run.py, run_cv.py均为端到端的，训练测试验证一条龙，最终提交文件保存在./data/下
 
-model_name 选择模型集合 ["bert-base-chinese", "hfl/chinese-roberta-wwm-ext", "hfl/chinese-bert-wwm", "hfl/chinese-bert-wwm-ext", "nghuyong/ernie-1.0"] 其中之一时仅需要将模型名字赋值给model_name即可  
+model_name 选择模型集合 ["bert-base-chinese", "hfl/chinese-roberta-wwm-ext", "hfl/chinese-bert-wwm", "hfl/chinese-bert-wwm-ext", "nghuyong/ernie-1.0"] 其中之一时仅需要将模型名字赋值给model_name即可，模型文件会自动下载！！！！下载时候需要翻墙  
+## 由于huggle face上的模型文件只能翻墙下载，所以我上传chinese-bert-wwm模型，解压到项目下，然后将model_name改为解压后的文件夹名字即可。
 当使用large模型时需要把hidden_size设为1024   
 
 模型详情可见https://github.com/ymcui/Chinese-BERT-wwm  
 
 "hfl/chinese-bert-wwm" 五折交叉验证可达到0.78+效果
+
 
 - 有问题可以直接提issues,看到肯定回答
 
