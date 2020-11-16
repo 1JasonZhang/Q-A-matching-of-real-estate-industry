@@ -11,6 +11,8 @@ run.py为单模型未五折交叉验证的
 
 run_cv.py是五折交叉验证的模型   
 
+run.py, run_cv.py均为端到端的，训练测试验证一条龙，最终提交文件保存在./data/下
+
 model_name 选择模型集合 ["bert-base-chinese", "hfl/chinese-roberta-wwm-ext", "hfl/chinese-bert-wwm", "hfl/chinese-bert-wwm-ext", "nghuyong/ernie-1.0"] 其中之一时仅需要将模型名字赋值给model_name即可  
 当使用large模型时需要把hidden_size设为1024   
 
