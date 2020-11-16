@@ -20,6 +20,8 @@ model_name 选择模型集合 ["bert-base-chinese", "hfl/chinese-roberta-wwm-ext
 
 "hfl/chinese-bert-wwm" 五折交叉验证可达到0.78+效果
 
+- 有问题可以直接提issues,看到肯定回答
+
 
 
 
