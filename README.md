@@ -1,7 +1,7 @@
 # 房产行业聊天问答匹配
 比赛网址 https://www.datafountain.cn/competitions/474/datasets
 ## 介绍
-本项目基于pytorch和transformer包来进行问答匹配建模， 
+本项目基于pytorch和transformer包来实现基于bert，roberta，ernie等模型实现问答匹配建模， 
 
 data中为数据文件  
 
