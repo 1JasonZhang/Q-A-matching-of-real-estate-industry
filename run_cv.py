@@ -155,7 +155,7 @@ if __name__ == '__main__':
     total_batch = 0
     early_stop = 20
 
-    train_data = pd.read_csv('./data/backTransTrain.csv')
+    train_data = pd.read_csv('./data/train.csv')
     test_data = pd.read_csv('./data/test.csv')
 
     feature_cols = ['query' ,'reply']
