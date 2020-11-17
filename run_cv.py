@@ -146,7 +146,7 @@ if __name__ == '__main__':
     hidden_size = 768
     n_class = 2
     batch_size = 64
-    Bert_Fc = 'hfl/chinese-bert-wwm'
+    model_name = 'hfl/chinese-bert-wwm'
 
     epochs = 10
     lr = 2e-5
