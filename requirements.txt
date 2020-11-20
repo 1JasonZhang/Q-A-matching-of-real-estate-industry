@@ -1,0 +1,6 @@
+pandas==1.1.0
+numpy==1.19.1
+jieba==0.42.1
+seaborn==0.9.0
+torch==1.4.0
+transformers==3.1.0

@@ -146,7 +146,7 @@ if __name__ == '__main__':
     hidden_size = 768
     n_class = 2
     batch_size = 64
-    Bert_Fc = 'hfl/chinese-bert-wwm'
+    model_name = 'hfl/chinese-bert-wwm-ext'
 
     epochs = 10
     lr = 2e-5
@@ -155,7 +155,7 @@ if __name__ == '__main__':
     total_batch = 0
     early_stop = 20
 
-    train_data = pd.read_csv('./data/backTransTrain.csv')
+    train_data = pd.read_csv('./data/train.csv')
     test_data = pd.read_csv('./data/test.csv')
 
     feature_cols = ['query' ,'reply']
@@ -166,7 +166,7 @@ if __name__ == '__main__':
     for tr_idx, val_idx in kf.split(train_data):
         train_x, train_y = train_data[feature_cols].loc[tr_idx], train_data[label_cols].loc[tr_idx]
         val_x, val_y = train_data[feature_cols].loc[val_idx], train_data[label_cols].loc[val_idx]
-        tokenizer = BertTokenizer.from_pretrained('./chinese-roberta-wwm-ext')
+        tokenizer = BertTokenizer.from_pretrained(model_name)
         train_encodings = tokenizer(train_x['query'].tolist(), train_x['reply'].tolist(), truncation=True, padding=True, max_length=max_seq_len)
         val_encodings = tokenizer(val_x['query'].tolist(), val_x['reply'].tolist(), truncation=True, padding=True, max_length=max_seq_len)
         test_encodings = tokenizer(test_data['query'].tolist(), test_data['reply'].tolist(), truncation=True, padding=True, max_length=max_seq_len)
