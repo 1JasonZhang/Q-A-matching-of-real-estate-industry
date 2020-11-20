@@ -19,7 +19,7 @@ model_name 选择模型集合 ["bert-base-chinese", "hfl/chinese-roberta-wwm-ext
 
 其他模型下载地址可见这个github https://github.com/ymcui/Chinese-BERT-wwm
  
-"hfl/chinese-bert-wwm" 五折交叉验证可达到0.78+效果
+"hfl/chinese-bert-wwm-ext" 五折交叉验证可达到0.78左右效果
 
 
 - 有问题可以直接提issues,看到肯定回答
